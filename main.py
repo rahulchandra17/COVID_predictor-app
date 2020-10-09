@@ -17,8 +17,8 @@ def coronapred():
         age = int(mydict['age'])
         features = [[fever,cold,tiredness,sorethroat,headache,loss_of_taste,age]]
         print(features)
-        # infprob = (clf.predict_proba(features))
-        return render_template('show.html',inf='30')
+        infprob = clf.predict_proba(features)
+        return render_template('show.html',inf=infprob[0][1])
     return render_template('index.html')
 
 
