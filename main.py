@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 from joblib import load
 
-# clf = load('corona')
+clf = load('corona')
 # print(clf)
 app = Flask(__name__)
 @app.route('/',methods=['GET','POST'])
