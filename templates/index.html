@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COVID SYMPTOMS PREDICTOR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,23 +24,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -49,41 +33,55 @@
         </div>
     </nav>
     <div class="container">
-        <h2>Corona virus predictor</h2>
+        <form action="/" method="POST" class="mt-5">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">fever</label>
+                <input name="fever" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type body tempreature">
+            </div>
+            <div class="form-group">
+                <select class="form-select" aria-label="Default select example" name="loss_of_taste">
+                    <option selected>LOSS OF TASTE</option>
+                    <option value="1">yes</option>
+                    <option value="0">no</option>
+                  </select>
+
+            </div>
+            <div class="form-group">
+                <select class="form-select" aria-label="Default select example" name="cold">
+                    <option selected>COLD</option>
+                    <option value="1">yes</option>
+                    <option value="0">no</option>
+                  </select>
+
+            </div>
+            <div class="form-group">
+                <select class="form-select" aria-label="Default select example" name="headache">
+                    <option selected>HEADACHE</option>
+                    <option value="1">yes</option>
+                    <option value="0">no</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <select class="form-select" aria-label="Default select example" name="tiredness">
+                    <option selected>TIREDNESS</option>
+                    <option value="1">yes</option>
+                    <option value="0">no</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <select class="form-select" aria-label="Default select example" name="sorethroat">
+                    <option selected>SORE THOROAT</option>
+                    <option value="1">yes</option>
+                    <option value="0">no</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">age</label>
+                <input name="age" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type your age  ">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-    <form action="/" method="POST">
-        <div class="form-group">
-            <label for="exampleFormControlInput1">fever</label>
-            <input name="fever" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type body tempreature">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">cold</label>
-            <input name="cold" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type 1 for yes 0 for no ">
-
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlSelect2">tiredness</label>
-            <input name="tiredness" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type 1 for yes 0 for no  ">
-
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">sorethroat</label>
-            <input name="sorethroat" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type 1 for yes 0 for no  ">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">headache</label>
-            <input name="headache" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type 1 for yes 0 for no  ">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">loss_of_taste</label>
-            <input name="loss_of_taste" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type 1 for yes 0 for no  ">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">age</label>
-            <input name="age" type="text" class="form-control" id="exampleFormControlInput1" placeholder="type your age  ">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -93,3 +91,4 @@
 </body>
 
 </html>
+                     
